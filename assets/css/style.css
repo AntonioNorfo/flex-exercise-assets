@@ -1,6 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fbf7e3;
+  border-radius: 90px;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Imposta il layout flex per ul in colonna */
 ul {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
-ul li {
-  margin: 5px;
+
+/* Imposta il layout flex per li */
+li {
+  border-radius: 100px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  flex: 1 1 auto; /* Consente a li di crescere e ridursi in base allo spazio disponibile */
+  background-color: #f3df85;
+  border: none;
+  color: #82623b;
+  list-style-type: none;
+  font-size: 1.4rem;
+  min-width: 0; /* Evita che li eccedano lo spazio disponibile */
+}
+
+/* Dimensiona l'immagine nel li */
+header nav ul li img {
+  width: 20px;
 }
