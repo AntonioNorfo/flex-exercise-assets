@@ -35,15 +35,14 @@ li {
   border-radius: 100px;
   text-align: center;
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   background-color: #f3df85;
   border: none;
   color: #732104;
   list-style-type: none;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1rem;
   flex: 1 1 40%;
-  min-width: 10; /* Evita che li eccedano lo spazio disponibile */
 }
 
 .special {
@@ -52,12 +51,24 @@ li {
   order: -1;
   padding: 30px;
   text-transform: uppercase;
-  font-weight: 400;
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 ul li img {
   width: 50px;
   position: relative;
   top: 8px;
+}
+
+h1 {
+  color: #732104;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#honeyPrice {
+  background-color: #fef7e2;
+  border-radius: 40px;
 }
