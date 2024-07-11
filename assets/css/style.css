@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  border: 0%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
 }
 
 header {
@@ -68,7 +77,29 @@ h1 {
   font-size: 3rem;
 }
 
-#honeyPrice {
+.card {
   background-color: #fef7e2;
-  border-radius: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+#imageCont img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+#dataCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.descriptionCard {
+  width: 48%;
+}
+.priceKg {
+  width: 48%;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+button {
+  padding: 10px;
 }
